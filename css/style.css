@@ -1,0 +1,689 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --blue: rgb(10, 139, 190);
+  --grey: rgb(185, 185, 185);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  width: 100%;
+  max-width: 1200px;  
+  margin: auto;
+  padding: 0 30px;
+}
+
+/* =============================================== */
+/* ==============H E A D E R====================== */
+/* =============================================== */
+
+header {
+  background-color: rgba(10, 139, 190, 0.493);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  padding: 10px;
+  height: min-content;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+}
+
+nav #menu-a a{
+  margin: 0 5px;
+  font-size: 12px;
+}
+
+#logo{
+  font-size: 35px;
+  color: #fff;
+}
+
+#logo span,
+#active-a{
+  font-weight: bolder;
+}
+
+
+/* =============== S E C T I O N======================= */
+
+#home{
+  background-image: url(../img/C78C9L9.jpg);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding-top: 300px;
+}
+
+#home i{
+  font-size: 35px;
+}
+
+#home h1{
+  font-size: 40px;
+  font-weight: 100;
+}
+
+#home p{
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+
+#home-btn{
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+#home-btn:hover{
+  background-color: var(--blue); 
+  animation-duration: 2s;
+  animation-name: btn; 
+}
+
+/* =============================================== */
+/* ============ S E R v I C E S=================== */
+/* =============================================== */
+
+#services hr{
+  border: 1px solid #000;
+  width: 70px;  
+}
+
+.title{
+  text-align: center;
+  color: var(--blue);
+}
+
+#services{
+  text-align: center;
+  padding: 50px;
+}
+
+#services ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#services h1{
+  color: var(--blue);
+}
+
+#services h6{
+  color: var(--grey);
+}
+
+#services li{
+  width: 25%;
+  margin-top: 35px;
+  margin-right: 50px;
+  border: 1px solid #fff;
+  padding: 20px;
+}
+
+#services i{
+  font-size: 40px;
+}
+
+#services li:hover{
+  box-shadow: -2px -2px 10px var(--blue), 2px 2px 10px var(--blue);
+}
+
+#services li:hover h1{
+  color: #000;
+}
+
+#services li:hover i {
+  color: crimson;
+}
+
+
+/* ========================================= */
+/* ============ P O R T F O L I O=========== */
+/* ========================================= */
+
+#portfolio{
+  background-image: url(../img/_7423-629.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding-top: 40px;
+}
+
+#portfolio hr{
+  border: 1px solid #fff;
+  width: 70px;  
+}
+
+#portfolio h2{
+  color: #fff;
+}
+
+
+#bordered{
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  width: 400px;
+  margin: auto;
+}
+
+#bordered a{
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+#bordered a:hover{
+  background-color: var(--grey);
+}
+
+#active-photo{
+  background-color: var(--grey);
+}
+
+.p-img img{
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+
+}
+
+#portfolio ul{
+  display: flex;
+  list-style: none;
+}
+
+#portfolio ul div{
+  margin: auto;
+}
+
+#long img{
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--grey);
+  border-radius: 3px;
+  margin: 10px;
+  width: 250px;
+  height: 200px;
+}
+
+
+/* ================================== */
+/* =========== O U R T E A M  ======== */
+/* ===================================== */
+
+#team{
+  padding: 100px;
+}
+
+
+#team img{
+  width: 200px;
+  height: 200px;
+  margin: 0 50px;
+  border-radius: 2px;
+}
+
+#user-i{
+  font-size: 35px;
+  color: black;
+}
+
+#team-title{
+  padding-bottom: 30px;
+  width: 25%;
+}
+
+#team-title h2{
+  color: var(--blue);
+}
+
+#team #inline{
+  display: flex;
+  text-align: center;
+}
+
+#team #inline div{
+  margin: auto;
+}
+
+#team hr{
+  border-color: #000;
+  width: 70px;
+}
+
+#team h6{
+  color: var(--grey);
+}
+
+
+#team #bottom{
+  align-self: flex-end;
+}
+
+#team-title-phone{
+  display: none;
+}
+
+.centered-img{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.blue-mask{
+  display: none;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: rgba(10, 139, 190, 0.493);
+}
+
+
+/* 
+#team img:hover>.blue-mask{
+  display: block;
+} */
+
+.blue-mask i{
+  font-size: 30px;
+  color: #fff;
+  padding: 84px 9px;
+}
+
+#team ul li{
+  width: 33%;
+}
+
+#team h4{
+  color: var(--blue);
+}
+
+#team h5{
+  color: var(--grey);
+}
+/* ================================ */
+/* ======= O F F I C E S=========== */
+/* ================================ */
+
+#offices-title{
+  margin: auto;
+  padding-top: 50px;
+  width: 400px;
+  text-align: center;
+}
+
+#offices-title h2{
+  color: var(--blue);
+}
+
+#offices-title h6{
+  color: white;
+}
+
+#offices-title hr{
+  border: 1px solid #fff;
+  width: 70px;
+}
+
+#offices{
+  background-image: url(../img/362122-negative-laptop-pens-books-MacBook-iPhone-Apple_Inc..jpg);
+  /* height: 800px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+}
+
+#offices img{
+  width: 800px;
+  margin: 100px 0px 0px 150px;
+}
+
+#mark ul{
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+#mark ul li{
+  margin: auto;
+  padding: 50px 50px 0px 0px;
+}
+
+.marker-i{
+  font-size: 35px;
+  color: #fff;
+  animation: rotate 2s infinite;
+}
+
+/* 
+.marker-i:hover{
+  animation: rotate 2s;
+} */
+
+@keyframes rotate{
+  10%{
+    transform: scale(1);
+    text-shadow:  -2px -2px 10px var(--blue), 2px 2px 10px var(--blue);
+  }
+
+  20%{
+    transform: scale(1.5);
+  }
+
+  30%{
+    transform: scale(2);
+    text-shadow:  -2px -2px 10px var(--blue), 2px 2px 10px var(--blue);
+
+  }
+
+  40%{
+    transform: scale(1.5);
+  }
+
+  50%{
+    transform: scale(1);
+    text-shadow:  -2px -2px 10px var(--blue), 2px 2px 10px var(--blue);
+  }
+
+  60%{
+    transform: scale(0);
+  }
+
+}
+
+#mark ul li h2{
+  text-shadow:  -2px -2px 10px var(--blue), 2px 2px 10px var(--blue);
+  color: #fff;
+}
+
+
+
+/* ====================================================== */
+/* ===================== C L I E N T S=================== */
+/* ====================================================== */
+
+.client-title{
+  margin: auto;
+  padding-top: 50px;
+  width: 400px;
+  text-align: center;
+}
+
+.client-title h2{
+  color: var(--blue);
+}
+
+.client-title h6{
+  color: var(--grey);
+}
+
+.client-title hr{
+  border: 1px solid var(--grey);
+  width: 70px;
+}
+
+#client-img{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#client-img img{
+  width: 150px;
+  margin: 50px;
+}
+
+#client-img img:hover{
+  box-shadow: -2px -2px 10px rgb(185, 185, 185), 2px 2px 10px rgb(185, 185, 185);
+  transform: scale(1.5);
+}
+
+/* ======================================================== */
+/* =================== C O N E C T +++++++++++ ============ */
+/* ======================================================== */
+
+#conect{
+  background-image: url(../img/laptop-mobile-phone-table-workspace-concept_93675-30583.jpg);
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  padding: 30px 0px;
+  text-align: center;
+}
+
+#conect ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+#conect i,
+h6{
+  color: #fff;
+}
+
+#conect i{
+  font-size: 40px;
+}
+
+#conect i:hover{
+  color: rgb(8, 179, 247);
+  transform: scale(1.5);
+}
+
+.conect-li{
+  padding: 45px;
+}
+
+#conect h2{
+  color: rgb(8, 179, 247);
+}
+
+#conect hr{
+  border: 1px solid #fff;
+  width: 70px;
+}
+
+.b-input{
+  font-family: 'Courier New', Courier, monospace;
+  border-style: none;
+  border-bottom: solid;
+  background-color: rgba(8, 179, 247, 0.452);
+  color: #fff;
+  width: 233px;
+  padding: 10px;
+  margin-bottom: 40px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.b-input:hover{
+  transform: scale(2);
+  border-bottom-color: rgb(8, 179, 247);
+  background-color: transparent;
+}
+
+::placeholder{
+  color: #fff;
+  font-weight: 900;
+}
+
+#send-btn{
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 2px;
+  padding: 5px 20px;
+}
+
+
+/* ================================== */
+/* ========= F O O T E R ============ */
+/* ++++++++++++++++++++++++++++++++++ */
+
+footer{
+  background-color: rgb(233, 233, 233);
+  padding: 2px 0px;
+  font-size: 10px; 
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+}
+
+footer li{
+  width: 33%;
+  text-align: center;
+}
+
+footer li p{
+  color:  rgb(124, 124, 124);
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--blue);
+}
+
+a i{
+  font-size: xx-large;  
+  transform: rotate(-90deg);
+  font-size: 15px;
+
+}
+
+/* xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo */
+/* XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (max-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+
+  #home{
+    height: 500px;
+    padding-top: 200px;
+  }
+
+  #services{
+    padding: 10px;
+  }
+
+  #services ul{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services li{
+    width: 90%;
+    max-width: 390px;
+  }
+
+  #portfolio #long{
+    display: none;
+  }
+
+  #team #inline #team-title{
+    display: none;
+  }
+
+  #team-title-phone{
+    display: block;
+    text-align: center;
+  }
+
+  #team-title-phone h2{
+    color: var(--blue);
+  }
+  #offices{
+    background-position: center;
+  }
+
+  #offices img{
+    width: 500px;
+    margin: 50px 0px 0px 0px;
+  }
+
+  #mark h2,
+  i{
+    font-size: 20px;
+  }
+
+  #client-img img {
+    width: 100px;
+    margin: 20px;
+  }
+  #conect{
+    height: 580px;
+  }
+
+  #conect ul{
+    display: none;
+  }
+
+  footer li{
+    width: 50%;
+  }
+
+  #footer-logo{
+    display: none;
+  }
+
+
+  footer{
+    font-size: 7px;
+  }
+
+  #conect ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  #conect li i{
+    font-size: 20px;
+  }
+
+  .conect-li{
+    padding: 0px 60px 0px 0px;
+  }
+
+  #conect{
+    height: auto;
+  }
+
+
+}
